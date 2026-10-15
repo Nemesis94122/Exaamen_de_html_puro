@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Examen #1 - Formulario de Matrícula</title>
+<link rel="stylesheet" href="styles.css">
+
+<body>
+
+
+    <section id="matricula">
+         <form action="#" method="POST" class="formulario-matricula">
+            <h2>Solicitud de Matrícula</h2>
+            <div class="grupo-campo">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="Nombre" name="nombre" placeholder="Ej. Juan Perez" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Ejemplo@correo.com" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej,1234567890" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="curso">Tipo de curso:</label>
+                <select id="curso" name="curso" required>
+                    <option value="" disabled selected>Seleccione un opción</option>
+                    <option value="carro" >Carro</option>
+                    <option value="moto" >Moto</option>
+                    <option value="mixto" >Mixto</option>
+                </select>
+            </div>
+            <div class="grupo-campo">
+                <label for="mensaje">Mensaje o comentario:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí los comentarios..." required></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+        </form>
+    </section>
+</body>
+</html>

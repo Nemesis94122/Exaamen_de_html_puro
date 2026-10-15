@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #8347D6;
+    color: #333;
+}
+#matricula{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d13cff,#00b0ff);
+    padding: 20px;
+}
+
+.formulario-matricula{
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);    
+}
+
+.formulario-matricula h2{
+    margin-bottom: 20px;
+    text-align: center;
+    color:#2E2E28;
+}
+
+.grupo-campo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.grupo-campo label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #3B3734;
+}
+
+.grupo-campo input,
+.grupo-campo select,
+.grupo-campo textarea {
+    padding: 10px 12px;
+    border: 1px solid #2E2E28;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: gainsboro;
+    transition: border-color 0.3s ease;
+}
+
+.grupo-campo input:focus,
+.grupo-campo select:focus,
+.grupo-campo textarea:focus {
+    outline: none;
+    border-color: #191919;
+}
+.grupo-campo textarea {
+    resize: vertical;
+}
+
+.btn-enviar{
+    width: 100%;
+    padding: 12px;
+    background-color:#5074DE;
+    color: white;
+    border: none;
+    border-radius:6px;
+    font-size: 1 rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3 ease;    
+}
+
+.btn-enviar:hover {
+    background-color:#4BB2DE;
+    box-shadow:0 4px 12px rgba(52,152,219,0.3);
+}
+@media (max-width: 1023px){
+    .formulario-matricula{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media (min-width:1024px) {
+    #matricula{
+    background: linear-gradient(135deg, #2EF0A8, #EB4287);
+}
+
+.formulario-matricula{
+    width: 650px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+}
